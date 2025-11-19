@@ -70,8 +70,3 @@ namespace CloudMailKit.Tests
         }
     }
 }
-```
-
-**Run tests:**
-```
-Test → Run All Tests (Ctrl+R, A)
