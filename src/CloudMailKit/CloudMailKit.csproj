@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>CloudMailKit</RootNamespace>
+    <AssemblyName>CloudMailKit</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Authors>CloudMailKit Contributors</Authors>
+    <Company>CloudMailKit</Company>
+    <Product>CloudMailKit</Product>
+    <Description>A 100% drop-in replacement for MailKit/MimeKit that uses Microsoft Graph OAuth for sending emails. Provides identical API surface for seamless migration from SMTP to Microsoft Graph.</Description>
+    <PackageTags>email;mail;smtp;mailkit;mimekit;microsoft-graph;oauth;cloud</PackageTags>
+    <RepositoryUrl>https://github.com/PSScript/CloudMailKit</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- COM Interop Settings -->
+    <EnableComInterop>true</EnableComInterop>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <ComVisible>true</ComVisible>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
