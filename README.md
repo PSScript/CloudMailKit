@@ -1,10 +1,34 @@
 # CloudMailKit
 
-A **100% drop-in replacement** for MailKit/MimeKit that uses **Microsoft Graph OAuth** instead of SMTP for sending emails.
+**🚨 Rescue Your Legacy Applications Before SMTP Dies! 🚨**
+
+A **100% drop-in replacement** for MailKit/MimeKit and legacy SMTP code that uses **Microsoft Graph OAuth** instead of basic authentication.
+
+## 🆘 Is Your App About to Break?
+
+**Microsoft is disabling SMTP with basic auth** - your old applications will STOP sending emails:
+
+- ❌ VB6 apps from the 2000s
+- ❌ Classic ASP e-commerce sites
+- ❌ .NET Framework 2.0-4.8 applications
+- ❌ Magic xpa business systems
+- ❌ Windows Services that email alerts
+- ❌ Scheduled tasks using CDO/SMTP
+
+**CloudMailKit is your emergency fix** ✅
+- Install in **minutes**, not months
+- **Minimal code changes** required
+- Buy time to **modernize properly**
+- Keep business running **NOW**
 
 ## Why CloudMailKit?
 
 Modern cloud email services like Microsoft 365 are deprecating basic authentication and SMTP. CloudMailKit provides an identical API to MailKit/MimeKit but uses Microsoft Graph API with OAuth authentication under the hood.
+
+**Perfect for:**
+- 🏚️ **Legacy applications** (VB6, Classic ASP, old .NET Framework)
+- 🔄 **Migration projects** (MailKit/MimeKit users)
+- 🚀 **New development** (.NET 6+ applications)
 
 ### Key Features
 
@@ -14,6 +38,17 @@ Modern cloud email services like Microsoft 365 are deprecating basic authenticat
 ✅ **COM Visible** - Works with VB6, Magic xpa, and other COM clients
 ✅ **Full Email Support** - Text, HTML, attachments, CC, BCC, importance
 ✅ **Email Reading** - Fetch, search, and manage emails via Graph API
+✅ **.NET Framework 4.8** - Works with stone age applications
+
+---
+
+## 📚 Documentation Quick Links
+
+- 🆘 **[LEGACY RESCUE GUIDE](LEGACY-RESCUE-GUIDE.md)** ← **Start here for VB6/Classic ASP/old .NET**
+- 🔄 **[Migration Guide](MIGRATION-GUIDE.md)** ← For MailKit/MimeKit users
+- 📖 **[Full Documentation](#)** ← Complete API reference (below)
+
+---
 
 ## Installation
 
