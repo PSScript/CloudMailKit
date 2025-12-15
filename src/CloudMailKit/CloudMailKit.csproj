@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Multi-target for maximum compatibility with stone age programs -->
+    <TargetFrameworks>net48;net6.0</TargetFrameworks>
+    <RootNamespace>CloudMailKit</RootNamespace>
+    <AssemblyName>CloudMailKit</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Authors>CloudMailKit Contributors</Authors>
+    <Company>CloudMailKit</Company>
+    <Product>CloudMailKit - Legacy SMTP to Graph API Bridge</Product>
+    <Description>Drop-in replacement for MailKit/MimeKit and legacy SMTP code. Rescues stone age applications (VB6, Classic ASP, old .NET) by redirecting SMTP calls to Microsoft Graph OAuth. Buy time to modernize while keeping old apps working!</Description>
+    <PackageTags>email;mail;smtp;mailkit;mimekit;microsoft-graph;oauth;cloud;legacy;vb6;classic-asp;com;interop;net48</PackageTags>
+    <RepositoryUrl>https://github.com/PSScript/CloudMailKit</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <LangVersion>latest</LangVersion>
+
+    <!-- COM Interop Settings - Critical for VB6/Classic ASP -->
+    <EnableComInterop>true</EnableComInterop>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <ComVisible>true</ComVisible>
+
+    <!-- Strong name for GAC registration -->
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <!-- .NET Framework 4.8 specific -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+</Project>
